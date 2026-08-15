@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simplecalc</title>
+</head>
+<body>
+<script>
+var item1Name = "Rice";
+var item1Price = 70; 
+var item1Qty = 5;     
+
+var item2Name = "Sugar";
+var item2Price = 45;   
+var item2Qty = 2;     
+
+var item3Name = "Wheat";
+var item3Price = 38;   
+var item3Qty = 10;     
+
+//Cost 
+var item1Cost = item1Price * item1Qty;
+var item2Cost = item2Price * item2Qty;
+var item3Cost = item3Price * item3Qty;
+
+console.log(item1Name + ": " + item1Qty + "kg × ₹" + item1Price + " = ₹" + item1Cost);
+console.log(item2Name + ": " + item2Qty + "kg × ₹" + item2Price + " = ₹" + item2Cost);
+console.log(item3Name + ": " + item3Qty + "kg × ₹" + item3Price + " = ₹" + item3Cost);
+
+
+var totalBill = item1Cost + item2Cost + item3Cost;
+console.log("Total bill: ₹" + totalBill);
+
+//Changing quantity
+item2Qty = 5; 
+
+
+item2Cost = item2Price * item2Qty;
+totalBill = item1Cost + item2Cost + item3Cost;
+
+
+console.log("\nQuantity updated for " + item2Name + " to " + item2Qty + "kg");
+console.log(item2Name + " new cost: ₹" + item2Cost);
+console.log("Updated total bill: ₹" + totalBill);
+
+</script>    
+</body>
+</html>
